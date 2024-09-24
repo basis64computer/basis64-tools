@@ -1,0 +1,20 @@
+{
+	"list": [
+		{
+			"title": "Translator",
+			"description": "Translator ini dapat menerjemahkan.",
+      "category": "bahasa",
+			"thumbnail": "assets/img/thumbnail/trigonometri.jpg",
+			"destination": "trigonometry.html",
+			"creator": "Admin",
+			"creator_photo": "assets/img/admin.png",
+			"date": "16 Juli 2024 &middot 09:00 AM",
+			"badges": [
+				{
+					"title": "Bahasa",
+					"color": "bg-warning"
+				}
+			]
+		}
+	]
+}
