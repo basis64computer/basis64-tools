@@ -1,0 +1,32 @@
+{
+	"calculator": [
+		{
+			"title": "Trigonometri",
+			"description": "Kalkulator ini dapat menghitung nilai-nilai fungsi trigonometri seperti sinus, cosinus, tangen, dan lainnya.",
+			"thumbnail": "assets/img/thumbnail/trigonometri.jpg",
+			"destination": "trigonometry.html",
+			"creator": "Admin",
+			"creator_photo": "assets/img/admin.png",
+			"badges": [
+				{
+					"title": "Kelas X",
+					"color": "bg-primary"
+				}
+			]
+		},
+		{
+			"title": "Statistika",
+			"description": "Kalkulator ini dapat menghitung nilai-nilai fungsi trigonometri seperti sinus, cosinus, tangen, dan lainnya.",
+			"thumbnail": "assets/img/thumbnail/statistika.jpg",
+			"destination": "statistika.html",
+			"creator": "Admin",
+			"creator_photo": "assets/img/admin.png",
+			"badges": [
+				{
+					"title": "Kelas X",
+					"color": "bg-primary"
+				}
+			]
+		}
+	]
+}
