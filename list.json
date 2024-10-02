@@ -1,18 +1,19 @@
 {
 	"list": [
 		{
-			"title": "Translator",
-			"description": "Translator ini dapat menerjemahkan.",
+			"id": "example",
+			"title": "Example",
+			"description": "Ini adalah contoh peralatan Jerry.",
       "category": "bahasa",
 			"thumbnail": "assets/img/thumbnail/trigonometri.jpg",
-			"destination": "trigonometry.html",
+			"destination": "example.html",
 			"creator": "Admin",
 			"creator_photo": "assets/img/admin.png",
 			"date": "16 Juli 2024 &middot 09:00 AM",
 			"badges": [
 				{
-					"title": "Bahasa",
-					"color": "bg-warning"
+					"title": "Example",
+					"color": "bg-primary"
 				}
 			]
 		}
