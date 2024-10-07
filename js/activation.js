@@ -1,12 +1,12 @@
 $(window).load(async function() {
-                let record = await getDatabase();
+                await loadDatabase();
                 let trial = getCookie("trial");
 
-                if (!record.pages[page_id]) {
+                if (!premiumPages[page_id]) {
                     return;
                 }
 
-                let user = getUser(record.database, getCookie("id"));
+                let user = getUser(database, getCookie("id"));
 
 
 

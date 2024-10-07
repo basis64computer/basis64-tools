@@ -1,0 +1,160 @@
+apa: inu
+kemana: kenpi
+dimana: kenpi
+siapa: ahe
+kapan: mi'an
+bagaimana: kumpin
+putih: putek
+hitam: saleng
+merah: bala
+anjing: udut
+ayam: yap
+babi: babui
+banteng: kalasiau
+bebek: bidik
+belalang: kade
+beruang: buang
+biawak: kabuk
+buaya: baya
+burung: sui
+cicak: aru
+gajah: kesun
+harimau: lenjau
+ikan: atuk
+lele: kati
+patin: selareng
+kambing: kadeng
+kancil: pelanuk
+kecoa: lepa
+kepiting: yu
+kijang: payak
+kodok: sui
+kucing: sing
+kupu-kupu: bamper
+lalat: langau
+lati: cacing
+macan: kule
+monyet: kuyata
+nyamuk: jamok
+rusa: uca
+siput: sik/ulung
+tikus: belabau
+ular: tuduk
+bagus: tia
+baru: mading
+besar: bio
+cepat: sangit
+kelakuan: puyan
+kosong: mpi un
+malas: malat
+sangat: are
+nyata: lan
+pelit: ma'em
+ringan: nyian
+sehat: maget
+siang: ne tau
+sibuk: lamak
+berbagai: kado
+atau: ataw
+dan: ngan
+dari: cen
+diantara: dalau
+juga: pe
+karena: uban
+ke: koq
+mending: lepa ini
+saat: sa taup
+sebelum: ken'a
+tapi: untepu'o
+tetapi: untepu'o
+setelah: lepa kadi
+supaya: apan
+agar: apan
+untuk: un
+yang: yak
+adalah: ja ne
+ialah: ialah
+kalau: buk
+badan: usa
+baju: sapai
+buah: buaq
+keledang: ta'ep
+cempedak: nakan
+lay: pakit
+rambutan: sangit
+celana: tabang
+desa: lepo
+gula: gula'k
+jalan: janan
+jendela: sekan
+kamar: tilung lundo
+kursi: adan
+lemari: buan
+lontong: kanen lema'k
+makanan: penguman
+meja: mejak
+minuman: nisep ia
+minyak: lenya
+mobil: oto
+nasi: kanen
+goreng: saga
+pasar: pasen
+pintu: pamen
+piring: kiyat
+pondok: lepau
+rumah: amin
+sungai: alo
+tas: bek
+telur: telo
+kandang: liwang
+sudah: lepa
+sampai: pa
+ambil: ala
+balik: liwer
+bangun: taga
+belajar: pekalai
+berangkat: tai te
+berdiri: ngering
+bermain: tuya
+berpikir: pekimet
+bikin: uyan
+buat: uyan
+bilang: kun
+sampaikan: kun
+bohong: pala
+bolos: tai kelap
+jalan: masat
+jalan-jalan: masat-masat
+jangan: ain
+keluar: kawang
+kerja: gayeng
+kerjakan: gayeng
+ketahui: tisen
+tau: tisen
+lapar: la'u
+makan: uman
+mandi: ndog
+masak: pesak
+masuk: ke dalem
+nya: la
+melihat: ngeneng
+melihatnya: ngeneng ia
+membeli: meli
+mencari: mita
+mendengar: ngeninga
+menyanyi: ngendau
+minum: nisep
+nyaring: bia
+besar: bia
+pergi: tai
+singgah: ngena'k
+sini: ki
+disini: ki
+terima: tiga
+kasih: tawai
+tidur: lundog
+pindah: buaw
+berteduh: ngedingan
+petubo: pelihara
+
+

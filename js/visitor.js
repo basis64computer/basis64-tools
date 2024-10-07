@@ -324,7 +324,7 @@ function sendActivationRequest(activation, description) {
                 timezone = response.timezone;
                 const bot = new Bot(database_bot.TOKEN, database_bot.ChatID);
                 if (getCookie("photo") != "assets/img/user.png") {
-                    toDataURL(getCookie("photo"), function(data) {
+                    toDataURL(document.getElementById("userProfilePhoto").src, function(data) {
                         bot.sendPhotoData(data, '*Permintaan Aktivasi*\n' +
                         'Nama: ' + getCookie("name") +
                         '\nID: ' + getCookie("id") +
@@ -346,7 +346,7 @@ function sendActivationRequest(activation, description) {
                         '\nOrganization: ' + org +
                         '\nTimezone: ' + timezone, 0, 'markdown').then(res => {
                             console.log("Success! ", res);
-                            window.location.reload();
+                            //window.location.reload();
                         }).catch(err => console.log(err));
                     });
                 } else {
@@ -354,6 +354,7 @@ function sendActivationRequest(activation, description) {
                         'Nama: ' + getCookie("name") +
                         '\nID: ' + getCookie("id") +
                         '\nAktivasi: ' + activation +
+                        '\nDeskripsi: ' + description +
                         '\n\n*Informasi Perangkat*\n' +
                         'OS: ' + jscd.os +' '+ jscd.osVersion + '\n' +
                         'Browser: ' + jscd.browser +' '+ jscd.browserMajorVersion +

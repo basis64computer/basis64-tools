@@ -1,0 +1,16 @@
+satu: CA
+dua: DUA
+tiga: TELU
+empat: PAT
+lima: LEMA
+enam: NEM
+tujuh: TUJUK
+delapan: AYA
+sembilan: PE’EN
+sepuluh: PULU’K
+seratus: CA'ATU
+seribu: CA'IBU
+sejuta: sejuta
+ratus: atu
+ribu: ibu
+juta: juta

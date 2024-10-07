@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Jerry's Tools - Administrator</title>
+        <title>BASIS64 Tools - Administrator</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -19,7 +19,7 @@
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container px-3">
                     <a class="navbar-brand" href="index.html">
-                        <img src="assets/img/logo.png" width="48px" height="48px" />Jerry's Tools</a>
+                        <img src="assets/img/logo.png" width="48px" height="48px" />BASIS64 Tools</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -243,7 +243,7 @@
                     <div class="modal-body">
                         <p>Kirim pesan</p>
                         <div class="form-floating mb-3">
-                            <input class="form-control" id="addPageInput" type="text" placeholder="Name" data-sb-validations="required" required />
+                            <input class="form-control" id="sendBroadcastInput" type="text" placeholder="Name" data-sb-validations="required" required />
                             <label for="activateAccountConfirmationInput">Pesan</label>
                             <div class="invalid-feedback" data-sb-feedback="activateAccountConfirmationInput:required">Harus diisi.</div>
                         </div>
@@ -497,7 +497,7 @@
                         addPremiumPageTable(i, pagesObjectKey[i], pages[pagesObjectKey[i]]);
                         //console.log(pagesObjectKey[i]);
                     }
-                    new simpleDatatables.DataTable(datatablesSimple01);
+                    BASIS-64 Tools
                     //new simpleDatatables.DataTable(table02);
                     //new simpleDatatables.DataTable(table01);
                     //update_tables();
@@ -505,6 +505,7 @@
 
                 function addPageDatabase() {
                     let input = document.getElementById("addPageInput");
+                    console.log("input value: " + input.value);
                     if (pages.hasOwnProperty(input.value)) {
                         $("#addPageModal").modal("hide");
                         $("#pageAlreadyAddedModal").modal("show");

@@ -5,28 +5,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="Kalkulator matematika" />
         <meta name="author" content="BASIS-64" />
-        <title>Jerry's Tools - Dashboard</title>
+        <title>BASIS-64 Tools - Dashboard</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <!-- Google / Search Engine Tags -->
-        <meta itemprop="name" content="Jerry's Tools">
-        <meta itemprop="description" content="Jerry's Tools adalah sebuah peralatan yang dapat membantu kamu, website ini memiliki peralatan yang lengkap">
+        <meta itemprop="name" content="BASIS-64 Tools">
+        <meta itemprop="description" content="BASIS-64 Tools adalah sebuah peralatan yang dapat membantu kamu, website ini memiliki peralatan yang lengkap">
         <meta itemprop="image" content="assets/img/background.jpg">
         <meta name="keywords" content="basis-64, basis64, basis-64 computer, basis64 computer, computer, komputer, jerry, jerry tools, tools, peralatan jerry, peralatan">
 
         <!-- Facebook Meta Tags -->
         <meta property="og:url" content="https://basis64computer.github.io/basis64-website/index.html">
         <meta property="og:type" content="website">
-        <meta property="og:title" content="Jerry's Tools">
-        <meta property="og:description" content="Jerry's Tools adalah sebuah peralatan yang dapat membantu kamu, website ini memiliki peralatan yang lengkap">
+        <meta property="og:title" content="BASIS-64 Tools">
+        <meta property="og:description" content="BASIS-64 Tools adalah sebuah peralatan yang dapat membantu kamu, website ini memiliki peralatan yang lengkap">
         <meta property="og:image" content="assets/img/background.jpg">
 
         <!-- Twitter Meta Tags -->
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Jerry's Tools">
-        <meta name="twitter:description" content="Jerry's Tools adalah sebuah peralatan yang dapat membantu kamu, website ini memiliki peralatan yang lengkap">
+        <meta name="twitter:title" content="BASIS-64 Tools">
+        <meta name="twitter:description" content="BASIS-64 Tools adalah sebuah peralatan yang dapat membantu kamu, website ini memiliki peralatan yang lengkap">
         <meta name="twitter:image" content="assets/img/background.jpg">
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
@@ -36,7 +36,7 @@
             <!-- Navigation-->
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container px-3">
-                    <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" width="48px" height="48px" />Jerry's Tools</a>
+                    <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" width="48px" height="48px" />BASIS-64 Tools</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -62,8 +62,8 @@
                     <div class="row gx-5 align-items-center justify-content-center">
                         <div class="col-lg-8 col-xl-7 col-xxl-6">
                             <div class="my-5 text-center text-xl-start">
-                                <h1 class="display-5 fw-bolder text-white mb-2" id="title">Jerry's Tools</h1>
-                                <p class="lead fw-normal text-white-50 mb-4" id="title2">Jerry's Tools adalah sebuah peralatan yang dapat membantu kamu, website ini memiliki peralatan yang lengkap. Kamu harus membayar untuk dapat menggunakan fitur premium.<br/>Tekan CTRL+SHIFT+R secara bersamaan agar dapat memuat ulang website ini.</p>
+                                <h1 class="display-5 fw-bolder text-white mb-2" id="title">BASIS-64 Tools</h1>
+                                <p class="lead fw-normal text-white-50 mb-4" id="title2">BASIS-64 Tools adalah sebuah peralatan yang dapat membantu kamu, website ini memiliki peralatan yang lengkap. Kamu harus membayar untuk dapat menggunakan fitur premium.<br/>Tekan CTRL+SHIFT+R secara bersamaan agar dapat memuat ulang website ini.</p>
                                 <p class="lead fw-normal text-white-50 mb-4" id="trialTitle"></p>
                                 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
                                     <a class="btn btn-primary btn-lg px-4 me-sm-3" href="activation.html">Aktivasi Akun</a>
@@ -81,12 +81,25 @@
                     <!-- Call to action-->
                     <aside class="bg-dark rounded-3 p-4 p-sm-5 mt-5">
                         <div class="row">
-                           <div class="col-lg-12">
-                            <div class="input-group input-group-lg">
-                              <input type="text" class="form-control input-lg" id="inputSearch" placeholder="Cari kalkulator">
-                              <button class="btn btn-outline-light" type="button">Cari</button>
+                            <div class="col-lg-10">
+                                <div class="input-group input-group-lg">
+                                    <input type="text" class="form-control input-lg" id="inputSearch" placeholder="Cari peralatan">
+                                    <button class="btn btn-outline-light" type="button">Cari</button>
+                                </div>
                             </div>
-                          </div>
+                            <div class="col-lg-2">
+                                <div class="input-group input-group-lg">
+                                    <select class="form-select" id="trigonometryFunctionSelect" onselect="" title="assets" onchange="">
+                                        <option value="" selected>Semua</option>
+                                        <option value="electricity" selected>Kelistrikan</option>
+                                        <option value="physics" selected>Fisika</option>
+                                        <option value="chemistry" selected>Kimia</option>
+                                        <option value="math" selected>Matematika</option>
+                                        <option value="language" selected>Bahasa</option>
+
+                                    </select>
+                                </div>
+                            </div>
                         </div>
                     </aside>
 
@@ -126,7 +139,7 @@
 
                     for(var i=0; i<listJson.length; i++) {
                         let item = listJson[i];
-                        addCardElement(item.title, item.description, item.thumbnail, item.destination, item.creator, item.creator_photo, item.date, item.badges);
+                        addCardElement(item.title, item.description, item.thumbnail, item.destination, item.creator, item.creator_photo, item.date, item.badges, premiumPages[item.id]);
                     }
 
                     searchResult.addEventListener("input", () => {
@@ -134,7 +147,7 @@
                     });
                 }
 
-                function addCardElement(title, description, thumbnail, destination, creator, creatorPhoto, date, badges) {
+                function addCardElement(title, description, thumbnail, destination, creator, creatorPhoto, date, badges, premium) {
                     // Card layout
                     const div01 = document.createElement("div");
                     div01.setAttribute("class", "col-lg-4 mb-5");
@@ -154,12 +167,22 @@
                     // Card-body layout
                     const div04 = document.createElement("div");
                     div04.setAttribute("class", "card-body p-4");
+                    
+
+                    if (premium) {
+                        let badge = document.createElement("div");
+                        badge.setAttribute("class", "badge rounded-pill mb-2 me-1 border border-danger bg-light text-danger");
+                        badge.innerHTML = '<i class="bi bi-fire"></i>Premium';
+                        div04.appendChild(badge);
+                    }
+
                     for(var i=0; i<badges.length; i++) {
                         let badge = document.createElement("div");
                         badge.setAttribute("class", "badge rounded-pill mb-2 me-1 " + badges[i].color);
                         badge.appendChild(document.createTextNode(badges[i].title));
                         div04.appendChild(badge);
                     }
+
                     const link = document.createElement("a");
                     link.setAttribute("href", destination);
                     link.setAttribute("class", "text-decoration-none link-dark stretched-link");
@@ -337,7 +360,7 @@
             if (getCookie("trial")) {
                 document.getElementById('trialTitle').innerHTML = "Kamu masih memiliki " + getCookie("trial") + " trial gratis.";
             }
-            fetch("https://raw.githubusercontent.com/basis64computer/jerry-tools/main/changelog.txt").then(x => x.text()).then(text => {
+            fetch("https://raw.githubusercontent.com/basis64computer/basis64-tools/main/changelog.txt").then(x => x.text()).then(text => {
                 document.getElementById('changelogText').value = text;
             })
         </script>

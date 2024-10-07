@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>BASIS-64 Tools - Tentang Website Ini</title>
+        <title>Example</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -18,7 +18,7 @@
             <!-- Navigation-->
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container px-3">
-                    <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" width="48px" height="48px" />BASIS-64 Tools</a>
+                    <a id="navbar-brand" class="navbar-brand" href="index.html"><img src="assets/img/logo.png" width="48px" height="48px" /></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -26,10 +26,10 @@
                             <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                             <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false>">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false>">
                                     <img id="userProfilePhoto" src="assets/img/user.png" class="user-img" width="32px" height="32px" onload=""></img>
                                 </a>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                     <li><a id="btn-create-account" class="dropdown-item btn-outline-dark" href="account-info.html">Lihat Akun</a></li>
                                 </ul>
                             </li>
@@ -60,13 +60,13 @@
         <footer class="bg-dark py-4 mt-auto">
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; BASIS-64 2024</div></div>
+                    <div class="col-auto"><div id="copyright-text" class="small m-0 text-white">Copyright &copy; BASIS-64 2024</div></div>
                     <div class="col-auto">
-                        <a class="link-light small" href="#!">Privacy</a>
+                        <a id="privacy-link" class="link-light small" href="#!">Privacy</a>
                         <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="#!">Terms</a>
+                        <a id="terms-link" class="link-light small" href="#!">Terms</a>
                         <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="#!">Contact</a>
+                        <a id="contact-link" class="link-light small" href="#!">Contact</a>
                     </div>
                 </div>
             </div>
@@ -89,11 +89,6 @@
                     {selectedLine: 1}
                 );
             });
-        </script>
-        <script type="text/javascript">
-            fetch("https://raw.githubusercontent.com/basis64computer/basis64-math/main/changelog.txt").then(x => x.text()).then(text => {
-                document.getElementById('changelogText').value = text;
-            })
         </script>
     </body>
 </html>

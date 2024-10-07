@@ -8,6 +8,7 @@ var userActivated;
 var userDynamicID;
 var userData;
 var database;
+var premiumPages;
 var record;
 
 var databaseURL = 'https://api.jsonbin.io/v3/b/66b04555e41b4d34e41bccf3';
@@ -81,6 +82,7 @@ async function loadDatabase() {
   record = await jsonResponse.record;
 	userCount = await record.users;
 	database = await record.database;
+	premiumPages = await record.pages;
 
 	return await record;
 }
