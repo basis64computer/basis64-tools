@@ -18,11 +18,11 @@
 			]
 		},
 		{
-			"id": "Translator Bahasa Dayak",
-			"title": "Example",
+			"id": "translator-dayak-kenyah",
+			"title": "Translator Bahasa Dayak",
 			"description": "Penerjemah bahasa Dayak Kenyah v1.0",
       			"category": "bahasa",
-			"thumbnail": "assets/img/thumbnail/trigonometri.jpg",
+			"thumbnail": "resources/translator-dayak-kenyah/thumbnail.jpg",
 			"destination": "translator.html",
 			"creator": "Admin",
 			"creator_photo": "assets/img/admin.png",
