@@ -69,7 +69,9 @@
                                         <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                                     </div>
                                     <!-- Submit Button-->
-                                    <div class="d-grid"><button class="btn btn-primary btn-lg" onclick="sendFeedback();">Kirim</button></div>
+                                    <div class="d-grid"><button class="btn btn-primary btn-lg" onclick="telegramSendMessage('*Pesan dari ' + document.getElementById('name').value + '*\n' + document.getElementById('message').value, function() {
+                                        $('messageModal').modal('show');
+                                    });">Kirim</button></div>
                                 </div>
                             </div>
                         </div>
@@ -77,6 +79,23 @@
                 </div>
             </section>
         </main>
+        <!-- Message modal -->
+        <div id="messageModal" class="modal fade" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Info</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Pesan terkirim.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Tutup</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Footer-->
         <footer class="bg-dark py-4 mt-auto">
             <div class="container px-3">
@@ -103,12 +122,5 @@
         <script src="js/cookie.js"></script>
         <script src="js/database.js"></script>
         <script src="js/initialize.js"></script>
-        <script type="text/javascript">
-            document.getElementById('name').value = getCookie("name");
-            function telegramSendMessage() {
-                send_message('*Pesan dari ' + document.getElementById('name').value + '*\n' + document.getElementById('message').value + '\n\n*Cookie Info*\nName: ' + getCookie('name') + '\nCookie ID: ' + getCookie('id') + '\n\nWebsite: Jerry\'s Tools');
-
-            }
-        </script>
     </body>
 </html>

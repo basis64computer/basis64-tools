@@ -153,9 +153,8 @@ function databaseSetUser(name, photo) {
 		};
 
 		console.log(JSON.stringify(record));
-		req.open("PUT", databaseURL, true);
+		req.open("POST", databaseURL, true);
 		req.setRequestHeader("Content-Type", "application/json");
-		req.setRequestHeader("X-Master-Key", "$2a$10$ls6EV35/v9eQm9p240tAfOJM6cj4/cHytWjQT0hEHrs.jfnrJWbAC");
 		req.send(JSON.stringify(record));
 	});
 }

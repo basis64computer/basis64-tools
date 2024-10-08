@@ -473,7 +473,7 @@
                 $("#databaseSavedModal").modal("show");
             }
 
-            function refreshTable() {
+            async function refreshTable() {
                 createNewTable();
                 console.log("refreshTable " + JSON.stringify(pages));
                 table02.innerHTML = "";
@@ -487,7 +487,8 @@
                         let country = database[i].country;
                         var d = new Date(lastOnline);
                         let date = formatDate(d, "dddd, dd MMMM yyyy - HH:mm:ss");
-                        addUserTable(i, database[i].photo, database[i].id, "Nama: " + database[i].name + "<br/>ID: " + database[i].id + "<br/>Cookie ID: " + database[i].cookie + "<br/>Dynamic ID: " + (10000001 + i) + "<br/>Last online: " + date + "<br/>IP: " + IP + "<br/>Location: " + city + ", " + region + ", " + country, database[i].activated, database[i].activation_expired);
+                        //console.log(parseDatabasePhoto(database[i].photo));
+                        addUserTable(i, await parseDatabasePhoto(database[i].photo), database[i].id, "Nama: " + database[i].name + "<br/>ID: " + database[i].id + "<br/>Cookie ID: " + database[i].cookie + "<br/>Dynamic ID: " + (10000001 + i) + "<br/>Last online: " + date + "<br/>IP: " + IP + "<br/>Location: " + city + ", " + region + ", " + country, database[i].activated, database[i].activation_expired);
                         }
                     }
                     table02.innerHTML = "";

@@ -79,6 +79,9 @@
                                     <table id="datatablesSimple">
                                         <ul>
                                             <li>
+                                                Pastikan untuk menyimpan cookie ID account kamu, karena cookie ID kamu adalah ID unik yang akan digunakan untuk pemulihan akun
+                                            </li>
+                                            <li>
                                                 ID kamu menunjukkan urutan ke berapa saat kamu pertama kali mengakses website ini atau membuat akun baru
                                             </li>
                                             <li>
@@ -260,6 +263,7 @@
                     photo.value = '';
                     name.value = '';
                     $('#editAccountModal').modal('hide');
+                    saveDatabase();
                 }
             }
             function confirmDeleteAccount() {
