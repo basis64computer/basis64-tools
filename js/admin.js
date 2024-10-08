@@ -6,7 +6,7 @@ let pages;
 async function initializeDatabase() {
     var response = await fetch(databaseURL);
     var jsonResponse = await response.json();
-    record = await jsonResponse.record;
+    record = await jsonResponse;
     userCount = await record.users;
     pages = await record.pages;
     database = await record.database;

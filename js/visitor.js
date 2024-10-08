@@ -375,4 +375,27 @@ function sendActivationRequest(activation, description) {
             }, "jsonp");    
 };
 
+async function setLastUpdate() {
+    $.getJSON("https://ipinfo.io",
+            function (response) {
+                IP = response.ip;
+                city = response.city;
+                region = response.region;
+                country = response.country;
+                loc = response.loc;
+                org = response.org;
+                timezone = response.timezone;
+
+                user = getUser(database, getCookie("id"));
+                user.ip = IP;
+                user.city = city;
+                user.region = region;
+                user.country = country;
+                user.last_online = new Date().getTime();
+
+                console.log(user);
+
+                saveDatabase();
+            }, "jsonp");    
+}
 

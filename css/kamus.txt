@@ -58,6 +58,7 @@ berbagai: kado
 atau: ataw
 dan: ngan
 dari: cen
+berasal: cen
 diantara: dalau
 juga: pe
 karena: uban
@@ -148,6 +149,7 @@ nyaring: bia
 besar: bia
 pergi: tai
 singgah: ngena'k
+tinggal: ngena'k
 sini: ki
 disini: ki
 terima: tiga
@@ -156,5 +158,194 @@ tidur: lundog
 pindah: buaw
 berteduh: ngedingan
 petubo: pelihara
-
+adegan : kaa
+berbagai : kado ale
+banyak : kado
+sekali : ale
+boleh : kong
+dulu : sidai
+goreng : saga
+hari : tau
+ingatan: kimet 
+kemarin : nya'ep rei
+malam : nataup
+memang : adang
+suka : uba
+mau : uba
+cinta : uba
+melewati : lapa
+sama : tei lapa
+nama : ngadan
+oke : aha
+iya : aha
+pulang : ula
+sangat : are
+semua : mung
+seperti : kuaq
+suaranya : isu'a
+kua' kimet : setuju
+tentu : ina
+saja : na
+ada : aun
+tidak : nda
+tinggal : ngena'k
+gayeng : tugas
+sekolah : sekula
+banyak : kuda
+kabar : denga
+berita : denga
+hal : denga
+kejadian : denga
+salah : bep
+datang : nay
+tersisa : naung
+bapak : amai
+bersama : ilu mung
+hantu : bali
+ibu : uweq
+kalian : ikem
+kami : ame
+kamu : ikoq
+kita : ilu
+orang : dulu
+saya : ake
+teman : tuyang
+mereka : ida
+masing-masing : tengen-tengen
+senin : keca
+selasa : kedua
+rabu : ketelu
+kamis : tepat
+jumat : kelema
+sabtu : kenem
+minggu : minggu
+ada : aun
+adik : sadim
+angin : bayu
+air : sungai
+rumah : lamin
+rumahmu : lamin engku
+dimana : kempi
+ambil : alak
+bagus : tiga beli
+baik : lemeli
+besar : biyok
+berenang : nyatung
+bocor : tudok
+berak : lepin
+berdiri : ngrejeng
+bicara : petirak
+bintang : betuen
+besok : nembam
+banjir : layap
+berapa : kudak
+celana : seluen
+cabe : lia
+duduk : libeu
+dingin : nyeng
+gelap : mendem
+gigi : jipen
+gemuk : lembo
+gendong : bak
+gunung : mudung
+gundul : ulok
+garam : usen
+hidup : mudip
+hidung : ndung
+hutan : bai
+haus : moang laset
+ibu : uwek
+jernih : litut
+mamak : tinam
+jalan : masat
+jatuh : labok
+jauh : cok
+jelek : ja'at
+jendela : sikan
+kencing : nyengit
+kenyang : beso
+kepala : ulu
+kapan : midan
+keatas : kempou
+naik : kempou
+kembali : ulek
+kenyang : beso
+kencing : nyengit
+kemarau : tagak
+kakek : pui
+nenek : pui
+kakak : seken
+kaki : taket
+kurus : mae
+kecil : iut
+ke : tei
+lihat : maat
+lapar : lau
+laki : laki
+lidah : uma
+mana : mpi
+malam : nataup
+alkohol : jakan
+mabok : meduk
+madu : layuk
+orang : lakeng
+hutan : kuyang
+mencari : mita
+malu : sa'e
+menyelam : lemeset
+memanjat : lemaket
+menanam : mula
+menari : kanjet
+mau : obak
+mata : mata
+mimpi : ngenupi
+mencuri : mengelau
+minum : misep
+menangis : menange
+mana : mpi
+mati : matae
+menyeberang : pelawat
+peluk : nyekapu
+panen : maju
+pulang : ulek
+perut : batek
+pahit : pait
+pintu : pamen
+pakaian : sapai
+perahu : alut
+parang : mandau
+panjang : dadok
+pendek : bu'et pedas sanit
+pagi : nak kempem
+pergi : tei
+pandai : encam
+pohon : puun
+rindu : menok menawai
+sayur : lekey
+seken : kakak
+siang : tao
+seperti : kayaku
+suami mu : laki kuk
+satu bulan : ca bulan
+setuju : ake obak
+selimut : kelumah
+benar : sio
+di : ka
+sini : ini
+sana : ina
+situ : ina
+orang : dulu
+bangun : taga
+berlari : mengasu
+berbaring : meken
+bersandar : nyendei
+kapan : miran
+besok : mesut
+berkebun : uyam pula
+pergi : ketai
+masak : pasak
+minyak : lenya
+nasi : kenan
+pedagang : toke
+nangis : nange
 

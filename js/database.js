@@ -11,7 +11,7 @@ var database;
 var premiumPages;
 var record;
 
-var databaseURL = 'https://api.jsonbin.io/v3/b/66b04555e41b4d34e41bccf3';
+var databaseURL = 'https://api.npoint.io/dc0a5091e2cfc3e4e6f6';
 
 /*
  * Fungsi callback untuk memproses database
@@ -79,7 +79,7 @@ function getUser(database, cookieID) {
 async function loadDatabase() {
   var response = await fetch(databaseURL);
   var jsonResponse = await response.json();
-  record = await jsonResponse.record;
+  record = await jsonResponse;
 	userCount = await record.users;
 	database = await record.database;
 	premiumPages = await record.pages;
@@ -102,7 +102,7 @@ function saveDatabase() {
 		}
 	};
 
-	req.open("PUT", "https://api.jsonbin.io/v3/b/66b04555e41b4d34e41bccf3", true);
+	req.open("POST", databaseURL, true);
 	req.setRequestHeader("Content-Type", "application/json");
 	req.setRequestHeader("X-Master-Key", "$2a$10$ls6EV35/v9eQm9p240tAfOJM6cj4/cHytWjQT0hEHrs.jfnrJWbAC");
 	req.send(JSON.stringify(record));
@@ -110,7 +110,7 @@ function saveDatabase() {
 
 function databaseSetPhoto(photo) {
 	fetch(databaseURL).then(response => response.json()).then(jsonResponse => {
-		let record = jsonResponse.record;
+		let record = jsonResponse;
 		let userCount = record.users;
 		let database = record.database;
 		
@@ -126,8 +126,9 @@ function databaseSetPhoto(photo) {
 		};
 
 		console.log(JSON.stringify(record));
-		req.open("PUT", "https://api.jsonbin.io/v3/b/66b04555e41b4d34e41bccf3", true);
+		req.open("POST", databaseURL, true);
 		req.setRequestHeader("Content-Type", "application/json");
+		req.setRequestHeader("mode", "no-cors");
 		req.setRequestHeader("X-Master-Key", "$2a$10$ls6EV35/v9eQm9p240tAfOJM6cj4/cHytWjQT0hEHrs.jfnrJWbAC");
 		req.send(JSON.stringify(record));
 	});
@@ -135,7 +136,7 @@ function databaseSetPhoto(photo) {
 
 function databaseSetUser(name, photo) {
 	fetch(databaseURL).then(response => response.json()).then(jsonResponse => {
-		let record = jsonResponse.record;
+		let record = jsonResponse;
 		let userCount = record.users;
 		let database = record.database;
 		
@@ -152,7 +153,7 @@ function databaseSetUser(name, photo) {
 		};
 
 		console.log(JSON.stringify(record));
-		req.open("PUT", "https://api.jsonbin.io/v3/b/66b04555e41b4d34e41bccf3", true);
+		req.open("PUT", databaseURL, true);
 		req.setRequestHeader("Content-Type", "application/json");
 		req.setRequestHeader("X-Master-Key", "$2a$10$ls6EV35/v9eQm9p240tAfOJM6cj4/cHytWjQT0hEHrs.jfnrJWbAC");
 		req.send(JSON.stringify(record));
@@ -161,7 +162,7 @@ function databaseSetUser(name, photo) {
 
 function databaseSetAdmin(admin) {
 	fetch(databaseURL).then(response => response.json()).then(jsonResponse => {
-		let record = jsonResponse.record;
+		let record = jsonResponse;
 		let userCount = record.users;
 		let database = record.database;
 		
@@ -177,7 +178,7 @@ function databaseSetAdmin(admin) {
 		};
 
 		console.log(JSON.stringify(record));
-		req.open("PUT", "https://api.jsonbin.io/v3/b/66b04555e41b4d34e41bccf3", true);
+		req.open("PUT", databaseURL, true);
 		req.setRequestHeader("Content-Type", "application/json");
 		req.setRequestHeader("X-Master-Key", "$2a$10$ls6EV35/v9eQm9p240tAfOJM6cj4/cHytWjQT0hEHrs.jfnrJWbAC");
 		req.send(JSON.stringify(record));
@@ -186,7 +187,7 @@ function databaseSetAdmin(admin) {
 
 function databaseSetActivated(activated, timestamp) {
 	fetch(databaseURL).then(response => response.json()).then(jsonResponse => {
-		let record = jsonResponse.record;
+		let record = jsonResponse;
 		let userCount = record.users;
 		let database = record.database;
 		
@@ -203,7 +204,7 @@ function databaseSetActivated(activated, timestamp) {
 		};
 
 		console.log(JSON.stringify(record));
-		req.open("PUT", "https://api.jsonbin.io/v3/b/66b04555e41b4d34e41bccf3", true);
+		req.open("PUT", databaseURL, true);
 		req.setRequestHeader("Content-Type", "application/json");
 		req.setRequestHeader("X-Master-Key", "$2a$10$ls6EV35/v9eQm9p240tAfOJM6cj4/cHytWjQT0hEHrs.jfnrJWbAC");
 		req.send(JSON.stringify(record));
@@ -213,10 +214,10 @@ function databaseSetActivated(activated, timestamp) {
 /*
  * Menambahkan pengguna ke database
  */
-function databaseAddUser(cookieID, name) {
+function databaseAddUser(cookieID, name, successCallback, failCallback) {
 	console.log("add user " + name);
 	fetch(databaseURL).then(response => response.json()).then(jsonResponse => {
-		let record = jsonResponse.record;
+		let record = jsonResponse;
 		let userCount = record.users;
 		let database = record.database;
 		
@@ -224,19 +225,19 @@ function databaseAddUser(cookieID, name) {
 		userCount++;
 		record.users = userCount;
 
-		let req = new XMLHttpRequest();
-
-		req.onreadystatechange = () => {
-		  if (req.readyState == XMLHttpRequest.DONE) {
-		    console.log(req.responseText);
-		  }
-		};
-
-		console.log(JSON.stringify(record));
-		req.open("PUT", "https://api.jsonbin.io/v3/b/66b04555e41b4d34e41bccf3", true);
-		req.setRequestHeader("Content-Type", "application/json");
-		req.setRequestHeader("X-Master-Key", "$2a$10$ls6EV35/v9eQm9p240tAfOJM6cj4/cHytWjQT0hEHrs.jfnrJWbAC");
-		req.send(JSON.stringify(record));
+		fetch(databaseURL, {
+			method: "POST",
+			body: JSON.stringify(record)
+		}).then(success => {
+			if (successCallback) {
+				successCallback(record);
+			}
+		}, error => {
+			console.log(error);
+			if (failCallback) {
+				failCallback(record, error);
+			}
+		});
 	});
 }
 
@@ -246,7 +247,7 @@ function databaseAddUser(cookieID, name) {
 function databaseDeleteUser() {
 	console.log("delete user " + getCookie("name"));
 	fetch(databaseURL).then(response => response.json()).then(jsonResponse => {
-		let record = jsonResponse.record;
+		let record = jsonResponse;
 		let userCount = record.users;
 		let database = record.database;
 
@@ -267,7 +268,7 @@ function databaseDeleteUser() {
 		  }
 		};
 
-		req.open("PUT", "https://api.jsonbin.io/v3/b/66b04555e41b4d34e41bccf3", true);
+		req.open("PUT", databaseURL, true);
 		req.setRequestHeader("Content-Type", "application/json");
 		req.setRequestHeader("X-Master-Key", "$2a$10$ls6EV35/v9eQm9p240tAfOJM6cj4/cHytWjQT0hEHrs.jfnrJWbAC");
 		req.onload = function() {

@@ -9,7 +9,7 @@
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="css/icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
@@ -39,6 +39,62 @@
             </nav>
             <div class="pt-5">
                 <div class="container px-3 my-1">
+                    <div class="card mb-1">
+                                        <div class="card-header p-4 d-flex justify-content-between align-items-center">
+                                            <div class="d-flex flex-row h4 display-6">
+                                                <i class="bi bi-translate"></i> &nbsp;Translator
+                                            </div>
+                                            <div class="d-flex flex-row d-none d-xl-block">
+                                                <div class="btn-group">
+                                                    
+                                                    <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#saveModal">
+                                                        <i class="bi bi-floppy2-fill"></i> &nbsp;Simpan </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="card-body2" class="card-body2 p-4">
+                                                <div class="row">
+                                                    <div class="col border m-1 p-2">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <p class="lead">Bahasa Indonesia</p>
+                                                            </div>
+                                                            <div class="col d-flex justify-content-end">
+                                                                <div>
+                                                                    <div class="btn-group">
+                                                                        <a id="copy01" class="btn btn-outline-dark">
+                                                                            <i class="bi bi-copy"></i></a>
+                                                                        <a id="paste01" class="btn btn-outline-dark">
+                                                                            <i class="bi bi-clipboard"></i></a>
+                                                                        <a id="read01" class="btn btn-primary">
+                                                                            <i class="bi bi-volume-up-fill"></i></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <textarea id="translateInput" class="form-control" style="resize: none;" rows="10"></textarea>
+                                                    </div>
+                                                    <div class="col border m-1 p-2">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <p class="lead">Bahasa Inggris</p>
+                                                            </div>
+                                                            <div class="col d-flex justify-content-end">
+                                                                <div>
+                                                                    <div class="btn-group">
+                                                                        <a id="copy02" class="btn btn-outline-dark">
+                                                                            <i class="bi bi-copy"></i></a>
+                                                                        <a id="read02" class="btn btn-outline-dark">
+                                                                            <i class="bi bi-volume-up-fill"></i></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <textarea id="translateOutput" class="form-control" style="resize: none;" rows="10" readonly></textarea>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
                     <div class="accordion mb-5" id="accordionExample">
                         <div class="accordion-item">
                             <h3 class="accordion-header" id="headingOne">
@@ -134,29 +190,399 @@
         <script type="text/javascript">
             let page_id = "translator";
             let dictionary = {
-                "satu": "ca",
-                "dua": "dua",
-                "tiga": "telu",
-                "empat": "pat",
-                "lima": "lema",
-                "enam": "nem",
-                "tujuh": "tujuk",
-                "delapan": "aya",
-                "sembilan": "pe\u2019en",
-                "sepuluh": "pulu\u2019k",
-                "seratus": "ca'atu",
-                "seribu": "ca'ibu",
-                "sejuta": "sejuta",
-                "ratus": "atu",
-                "ribu": "ibu",
-                "juta": "juta"
-            }
+  "apa": "inu",
+  "aku": "ake",
+  "kemana": "kenpi",
+  "dimana": "kenpi",
+  "siapa": "ahe",
+  "kapan": "mi'an",
+  "bagaimana": "kumpin",
+  "putih": "putek",
+  "hitam": "saleng",
+  "merah": "bala",
+  "anjing": "udut",
+  "ayam": "yap",
+  "babi": "babui",
+  "banteng": "kalasiau",
+  "bebek": "bidik",
+  "belalang": "kade",
+  "beruang": "buang",
+  "biawak": "kabuk",
+  "buaya": "baya",
+  "burung": "sui",
+  "cicak": "aru",
+  "gajah": "kesun",
+  "harimau": "lenjau",
+  "ikan": "atuk",
+  "lele": "kati",
+  "patin": "selareng",
+  "kambing": "kadeng",
+  "kancil": "pelanuk",
+  "kecoa": "lepa",
+  "kepiting": "yu",
+  "kijang": "payak",
+  "kodok": "sui",
+  "kucing": "sing",
+  "kupu-kupu": "bamper",
+  "lalat": "langau",
+  "lati": "cacing",
+  "macan": "kule",
+  "monyet": "kuyata",
+  "nyamuk": "jamok",
+  "rusa": "uca",
+  "siput": "sik/ulung",
+  "tikus": "belabau",
+  "ular": "tuduk",
+  "bagus": "tia",
+  "baru": "mading",
+  "besar": "bio",
+  "cepat": "sangit",
+  "kelakuan": "puyan",
+  "kosong": "mpi un",
+  "malas": "malat",
+  "nyata": "lan",
+  "pelit": "ma'em",
+  "ringan": "nyian",
+  "sehat": "maget",
+  "siang": "ne tau",
+  "sibuk": "lamak",
+  "berbagai": "kado",
+  "atau": "ataw",
+  "dan": "ngan",
+  "dari": "cen",
+  "berasal": "cen",
+  "diantara": "dalau",
+  "juga": "pe",
+  "karena": "uban",
+  "ke": "koq",
+  "mending": "lepa ini",
+  "saat": "sa taup",
+  "sebelum": "ken'a",
+  "tapi": "untepu'o",
+  "tetapi": "untepu'o",
+  "setelah": "lepa kadi",
+  "supaya": "apan",
+  "agar": "apan",
+  "untuk": "un",
+  "yang": "yak",
+  "adalah": "ja ne",
+  "ialah": "ialah",
+  "kalau": "buk",
+  "badan": "usa",
+  "baju": "sapai",
+  "buah": "buaq",
+  "keledang": "ta'ep",
+  "cempedak": "nakan",
+  "lay": "pakit",
+  "rambutan": "sangit",
+  "desa": "lepo",
+  "gula": "gula'k",
+  "jendela": "sekan",
+  "kamar": "tilung lundo",
+  "kursi": "adan",
+  "lemari": "buan",
+  "lontong": "kanen lema'k",
+  "makanan": "penguman",
+  "meja": "mejak",
+  "minuman": "nisep ia",
+  "minyak": "lenya",
+  "mobil": "oto",
+  "goreng": "saga",
+  "pasar": "pasen",
+  "piring": "kiyat",
+  "pondok": "lepau",
+  "rumah": "amin",
+  "sungai": "alo",
+  "tas": "bek",
+  "telur": "telo",
+  "kandang": "liwang",
+  "sudah": "lepa",
+  "sampai": "pa",
+  "balik": "liwer",
+  "bangun": "taga",
+  "belajar": "pekalai",
+  "berangkat": "tai te",
+  "bermain": "tuya",
+  "berpikir": "pekimet",
+  "bikin": "uyan",
+  "buat": "uyan",
+  "bilang": "kun",
+  "sampaikan": "kun",
+  "bohong": "pala",
+  "bolos": "tai kelap",
+  "jalan": "masat",
+  "jalan-jalan": "masat-masat",
+  "jangan": "ain",
+  "keluar": "kawang",
+  "kerja": "gayeng",
+  "kerjakan": "gayeng",
+  "ketahui": "tisen",
+  "tau": "tisen",
+  "makan": "uman",
+  "mandi": "ndog",
+  "masak": "pesak",
+  "masuk": "ke dalem",
+  "nya": "la",
+  "melihat": "ngeneng",
+  "melihatnya": "ngeneng ia",
+  "membeli": "meli",
+  "mendengar": "ngeninga",
+  "menyanyi": "ngendau",
+  "minum": "nisep",
+  "nyaring": "bia",
+  "singgah": "ngena'k",
+  "tinggal": "ngena'k",
+  "disini": "ki",
+  "terima": "tiga",
+  "kasih": "tawai",
+  "tidur": "lundog",
+  "pindah": "buaw",
+  "berteduh": "ngedingan",
+  "petubo": "pelihara",
+  "adegan": "kaa",
+  "banyak": "kado",
+  "sekali": "ale",
+  "boleh": "kong",
+  "dulu": "sidai",
+  "hari": "tau",
+  "ingatan": "kimet",
+  "kemarin": "nya'ep rei",
+  "malam": "nataup",
+  "memang": "adang",
+  "suka": "uba",
+  "cinta": "uba",
+  "melewati": "lapa",
+  "sama": "tei lapa",
+  "nama": "ngadan",
+  "namaku": "ngadan keq",
+  "ku": "keq",
+  "oke": "aha",
+  "iya": "aha",
+  "pulang": "ula",
+  "sangat": "are",
+  "semua": "mung",
+  "seperti": "kuaq",
+  "suaranya": "isu'a",
+  "kua' kimet": "setuju",
+  "tentu": "ina",
+  "saja": "na",
+  "ada": "aun",
+  "tidak": "nda",
+  "gayeng": "tugas",
+  "sekolah": "sekula",
+  "kabar": "denga",
+  "berita": "denga",
+  "hal": "denga",
+  "kejadian": "denga",
+  "salah": "bep",
+  "datang": "nay",
+  "tersisa": "naung",
+  "bapak": "amai",
+  "bersama": "ilu mung",
+  "hantu": "bali",
+  "ibu": "uweq",
+  "kalian": "ikem",
+  "kami": "ame",
+  "kamu": "ikoq",
+  "kita": "ilu",
+  "saya": "ake",
+  "teman": "tuyang",
+  "mereka": "ida",
+  "masing-masing": "tengen-tengen",
+  "senin": "keca",
+  "selasa": "kedua",
+  "rabu": "ketelu",
+  "kamis": "tepat",
+  "jumat": "kelema",
+  "sabtu": "kenem",
+  "minggu": "minggu",
+  "adik": "sadim",
+  "angin": "bayu",
+  "air": "sungai",
+  "rumahmu": "lamin engku",
+  "ambil": "alak",
+  "baik": "lemeli",
+  "berenang": "nyatung",
+  "bocor": "tudok",
+  "berak": "lepin",
+  "berdiri": "ngrejeng",
+  "bicara": "petirak",
+  "bintang": "betuen",
+  "besok": "nembam",
+  "banjir": "layap",
+  "berapa": "kudak",
+  "celana": "seluen",
+  "cabe": "lia",
+  "duduk": "libeu",
+  "dingin": "nyeng",
+  "gelap": "mendem",
+  "gigi": "jipen",
+  "gemuk": "lembo",
+  "gendong": "bak",
+  "gunung": "mudung",
+  "gundul": "ulok",
+  "garam": "usen",
+  "hidup": "mudip",
+  "hidung": "ndung",
+  "hutan": "bai",
+  "haus": "moang laset",
+  "jernih": "litut",
+  "mamak": "tinam",
+  "jatuh": "labok",
+  "jauh": "cok",
+  "jelek": "ja'at",
+  "kencing": "nyengit",
+  "kenyang": "beso",
+  "kepala": "ulu",
+  "keatas": "kempou",
+  "naik": "kempou",
+  "kembali": "ulek",
+  "kemarau": "tagak",
+  "kakek": "pui",
+  "nenek": "pui",
+  "kakak": "seken",
+  "kaki": "taket",
+  "kurus": "mae",
+  "kecil": "iut",
+  "lihat": "maat",
+  "lapar": "lau",
+  "laki": "laki",
+  "lidah": "uma",
+  "alkohol": "jakan",
+  "mabok": "meduk",
+  "madu": "layuk",
+  "orang": "lakeng",
+  "mencari": "mita",
+  "malu": "sa'e",
+  "menyelam": "lemeset",
+  "memanjat": "lemaket",
+  "menanam": "mula",
+  "menari": "kanjet",
+  "mau": "obak",
+  "mata": "mata",
+  "mimpi": "ngenupi",
+  "mencuri": "mengelau",
+  "menangis": "menange",
+  "mana": "mpi",
+  "mati": "matae",
+  "menyeberang": "pelawat",
+  "peluk": "nyekapu",
+  "panen": "maju",
+  "perut": "batek",
+  "pahit": "pait",
+  "pintu": "pamen",
+  "pakaian": "sapai",
+  "perahu": "alut",
+  "parang": "mandau",
+  "panjang": "dadok",
+  "pendek": "bu'et",
+  "pedas": "sanit",
+  "pagi": "nak kempem",
+  "pergi": "tei",
+  "pandai": "encam",
+  "pohon": "puun",
+  "rindu": "menok menawai",
+  "sayur": "lekey",
+  "suami mu": "laki kuk",
+  "satu bulan": "ca bulan",
+  "setuju": "ake obak",
+  "selimut": "kelumah",
+  "benar": "sio",
+  "di": "ka",
+  "sini": "ini",
+  "sana": "ina",
+  "situ": "ina",
+  "berlari": "mengasu",
+  "berbaring": "meken",
+  "bersandar": "nyendei",
+  "berkebun": "uyam pula",
+  "nasi": "kenan",
+  "pedagang": "toke",
+  "nangis": "nange"
+}
+
 
             let dictionaryTable = document.getElementById("dictionaryTable");
             let dictionaryTableBody = document.getElementById("dictionaryTableBody");
 
+            let copy01 = document.getElementById("copy01");
+            let copy02 = document.getElementById("copy02");
+            let paste01 = document.getElementById("paste01");
+            let read01 = document.getElementById("read01");
+            let read02 = document.getElementById("read02");
+            let translateInput = document.getElementById("translateInput");
+            let translateOutput = document.getElementById("translateOutput");
+
+            translateInput.value = "";
+            translateOutput.value = "";
+
+
+
+
+            copy01.addEventListener("click", function(argument) {
+                // Select the text field
+                translateInput.select();
+                translateInput.setSelectionRange(0, 99999); // For mobile devices
+
+                // Copy the text inside the text field
+                navigator.clipboard.writeText(translateInput.value);
+            }, false);
+
+            copy02.addEventListener("click", function(argument) {
+                // Select the text field
+                translateOutput.select();
+                translateOutput.setSelectionRange(0, 99999); // For mobile devices
+
+                // Copy the text inside the text field
+                navigator.clipboard.writeText(translateOutput.value);
+            });
+
+            paste01.addEventListener("click", async function(argument) {
+                // Select the text field
+                //translateInput.select();
+                //translateInput.setSelectionRange(0, 99999); // For mobile devices
+
+                // Copy the text inside the text field
+                translateInput.value = await navigator.clipboard.readText();
+            });
+
+            read01.addEventListener("click", function () {
+                var audio = new Audio();
+                audio.src ='https://translate.google.com/translate_tts?ie=UTF-8&tl=id-ID&client=tw-ob&q=' + encodeURI(translateInput.value);
+                audio.play();
+                console.log("TTS");
+
+            });
+
+            read02.addEventListener("click", function () {
+                var audio = new Audio();
+                audio.src ='https://translate.google.com/translate_tts?ie=UTF-8&tl=id-ID&client=tw-ob&q=' + encodeURI(translateOutput.value);
+                audio.play();
+                console.log("TTS");
+
+            });
+
+            translateInput.addEventListener("input", function() {
+                translateOutput.value = "Sedang menerjemahkan...";
+                translateOutput.setAttribute("class", "form-control text-secondary");
+                translate();
+            });
+
+            function translate() {
+                let words = translateInput.value.replaceAll(/([^a-zA-Z0-9])/g, " $1 ").toLowerCase().split(" ");
+                let translated = [];
+                for(var i=0; i<words.length; i++) {
+                    let word = words[i];
+                    let translatedWord = (dictionary[word])?dictionary[word]:word;
+                    translated.push(translatedWord);
+                }
+                console.log(translated);
+                translateOutput.value = translated.join(" ").replaceAll(/\s*([^\w\s])\s*/g, "$1 ").replaceAll("  ", "");
+            }
+
+
             let array = Object.keys(dictionary);
-            console.log(array);
+            //console.log(array);
 
             for(var i=0; i<array.length; i++) {
                 let tr = document.createElement("tr");
@@ -167,7 +593,7 @@
                 td.innerHTML = i;
                 td2.innerHTML = array[i];
                 td3.innerHTML = dictionary[array[i]];
-                console.log(dictionary[array[i]]);
+                //console.log(dictionary[array[i]]);
 
                 tr.appendChild(td);
                 tr.appendChild(td2);

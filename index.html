@@ -9,7 +9,7 @@
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="css/icons.css">
         <!-- Google / Search Engine Tags -->
         <meta itemprop="name" content="BASIS-64 Tools">
         <meta itemprop="description" content="BASIS-64 Tools adalah sebuah peralatan yang dapat membantu kamu, website ini memiliki peralatan yang lengkap">
@@ -338,13 +338,19 @@
         <script src="js/scripts.js"></script>
         <script src="js/icons.js"></script>
         <script src="js/cookie.js"></script>
+        <script src="js/visitor.js"></script>
         <script src="js/database.js"></script>
         <script src="js/initialize.js"></script>
         <script>
+            async function initializePage() {
+                await loadDatabase();
+                await setLastUpdate();
+            }
             window.addEventListener('DOMContentLoaded', event => {
                 // Simple-DataTables
                 // https://github.com/fiduswriter/Simple-DataTables/wiki
-
+                
+                initializePage();
                 const itemulatorTable = document.getElementById('itemulatorTable');
                 if (itemulatorTable) {
                     new simpleDatatables.DataTable(itemulatorTable);
