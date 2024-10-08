@@ -13,7 +13,7 @@
 			"badges": [
 				{
 					"title": "Example",
-					"color": "bg-primary"
+					"color": "bg-dark"
 				}
 			]
 		},
@@ -29,8 +29,8 @@
 			"date": "16 Juli 2024 &middot 09:00 AM",
 			"badges": [
 				{
-					"title": "Example",
-					"color": "bg-primary"
+					"title": "Bahasa",
+					"color": "bg-warning"
 				}
 			]
 		}
