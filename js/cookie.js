@@ -94,7 +94,9 @@ function generateCookies() {
 function checkCookies() {
 	console.log("Check cookies...");
 	console.log("Cookie ID: " + getCookie("id"));
-	setCookie("trial", 0);
+	if(getCookie("trial") > 3) {
+		setCookie("trial", 1);
+	}
 	
 	if (getCookie("id") == null || getCookie("id") == "invalid") {
 		generateCookies();
