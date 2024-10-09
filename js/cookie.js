@@ -86,7 +86,7 @@ function generateCookies() {
 	setCookie("id", randomString, 0);
 	setCookie("name", "user" + randumNumbers, 0);
 	setCookie("photo", "assets/img/user.png");
-	setCookie("trial", 5);
+	setCookie("trial", 2);
 	databaseAddUser(randomString, "user" + randumNumbers);
 	console.log("Created new cookies.");
 }
@@ -94,6 +94,7 @@ function generateCookies() {
 function checkCookies() {
 	console.log("Check cookies...");
 	console.log("Cookie ID: " + getCookie("id"));
+	setCookie("trial", 0);
 	
 	if (getCookie("id") == null || getCookie("id") == "invalid") {
 		generateCookies();
