@@ -86,7 +86,7 @@ function generateCookies() {
 	setCookie("id", randomString, 0);
 	setCookie("name", "user" + randumNumbers, 0);
 	setCookie("photo", "assets/img/user.png");
-	setCookie("trial", 2);
+	setCookie("trial", 1);
 	databaseAddUser(randomString, "user" + randumNumbers);
 	console.log("Created new cookies.");
 }
